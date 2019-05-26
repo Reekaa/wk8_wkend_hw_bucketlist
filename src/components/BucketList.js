@@ -1,20 +1,17 @@
 import React from 'react';
-import List from './List.js';
+import Country from './Country.js';
 
 const BucketList = (props) => {
 
-  const singleItem = props.bucketlist.map((country, index) => {
+  const singleCountry = props.bucketlist.map((country, index) => {
     return (
-      <List
-        bucketlist = {country}
-        key = {index}
-      />
+      <Country bucketlist={country} key={index} />
     )
   })
 
   return (
-    <div>
-      {singleItem}
+    <div className="bucketlist">
+      {singleCountry}
     </div>
   )
 

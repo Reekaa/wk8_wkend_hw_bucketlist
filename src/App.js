@@ -9,9 +9,9 @@ function App() {
       <h1>Bucket List</h1>
       <CountryListContainer />
       <div className="ui horizontal divider">
-      <i className="purple flag icon"> </i>
-        Countries to visit
-      <i className="purple flag icon"> </i>
+        <i className="flag icon"> </i>
+          Countries to visit
+        <i className="flag icon"> </i>
       </div>
       <BucketListContainer />
     </div>
